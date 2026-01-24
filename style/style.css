@@ -1,0 +1,188 @@
+/* 1. General Reset */
+* {
+    font-family: "Arial", sans-serif;
+    box-sizing: border-box;
+    /* Fixes padding issues */
+    margin: 0;
+    padding: 0;
+}
+
+/* 2. Background and Body */
+body {
+    /* Use the image we generated, or fallback to yellow if image is missing */
+    background-color: #f8cf41;
+    /* UNCOMMENT THE LINE BELOW WHEN YOU SAVE THE BACKGROUND IMAGE */
+    /* background-image: url('images/background.jpg'); */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #123261;
+    /* Dark Blue Text */
+    padding: 20px;
+}
+
+/* 3. The Main Container (Glass Effect) */
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    /* 90% opaque white */
+    max-width: 900px;
+    margin: 0 auto;
+    /* Centers the box */
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* 4. Header Styling */
+.main-logo {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.title {
+    color: #123261;
+    font-size: 2.5em;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    color: #f25832;
+    /* Coral/Orange */
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/* 5. Navigation & Social Buttons */
+nav h2 {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+.contact-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    /* Space between buttons */
+    flex-wrap: wrap;
+    /* Allows buttons to stack on small phones */
+    margin-bottom: 40px;
+}
+
+.social-btn {
+    background-color: #2d9893;
+    /* Teal */
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    /* Pill shape */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.social-btn img {
+    width: 20px;
+    height: 20px;
+    filter: brightness(0) invert(1);
+    /* Makes icons white */
+}
+
+.social-btn:hover {
+    transform: scale(1.05);
+    background-color: #123261;
+    /* Dark blue on hover */
+}
+
+/* 6. Learning Methods Section */
+.learning-methods {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.method-card {
+    background: #f9f9f9;
+    border: 2px solid #eee;
+    padding: 20px;
+    border-radius: 15px;
+    flex: 1;
+    min-width: 300px;
+    /* Prevents them from getting too squashed */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.method-card h3 {
+    color: #2d9893;
+    margin-bottom: 15px;
+}
+
+.device-image {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+.mobile-img {
+    max-width: 150px;
+    /* Makes the phone look realistic compared to laptop */
+}
+
+.method-card p {
+    color: #555;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+}
+
+/* 7. Action Buttons */
+.join-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    margin-top: auto;
+    /* Pushes button to bottom of card */
+}
+
+.google {
+    background-color: #f25832;
+    /* Coral for Meet */
+}
+
+.whatsapp-green {
+    background-color: #25D366;
+    /* Official WhatsApp Green */
+}
+
+.join-btn:hover {
+    opacity: 0.8;
+}
+
+/* 8. Footer */
+footer {
+    margin-top: 50px;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+    color: #888;
+    font-size: 0.9em;
+}
+
+.contact-info {
+    color: #123261;
+    font-weight: bold;
+    margin-top: 5px;
+}

@@ -9,10 +9,7 @@
 
 /* 2. Background and Body */
 body {
-    /* Use the image we generated, or fallback to yellow if image is missing */
     background-color: #f8cf41;
-    /* UNCOMMENT THE LINE BELOW WHEN YOU SAVE THE BACKGROUND IMAGE */
-    /* background-image: url('images/background.jpg'); */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
